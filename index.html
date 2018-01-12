@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-<iframe src="http://dlsw.tayitie.com" id="iframepage" name="iframepage" frameBorder=0 scrolling="no" width="100%" allowfullscreen="true" allowtransparency="true"></iframe>
+ <iframe src="http://dlsw.tayitie.com" id="iframepage" name="iframepage" frameBorder=0  width="100%" allowfullscreen="true" allowtransparency="true"></iframe>
+
+<script>
+        //iframeÈ«ÆÁ»¯
+        changeFrameHeight();
+
+        function changeFrameHeight() {
+            var ifm = document.getElementById("iframepage");
+            //ifm.height = document.documentElement.clientHeight+300;
+			ifm.height = 2000;
+        }
+        window.onresize = function () {
+            changeFrameHeight();
+        }
+</script>
 </body>
 </html>
